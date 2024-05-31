@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Window</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="retro-window">
+        <div class="title-bar">
+            <div class="controls">
+               <img src="control.png" alt="control">
+            </div>
+        </div>
+        <div class="content" id="scrollable-content">
+            <div class="inner-content"></div>
+        </div>
+        <div class="scroll-bar">
+            <div class="scroll-left" onclick="moveThumb(-10)">&#9664;</div>
+            <div class="scroll-track">
+                <div class="scroll-thumb" id="scroll-thumb"></div>
+            </div>
+            <div class="scroll-right" onclick="moveThumb(10)">&#9654;</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
