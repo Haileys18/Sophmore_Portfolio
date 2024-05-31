@@ -1,1 +1,98 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('gradient.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+
+.retro-window {
+  width: 800px;
+  height: 600px;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  background-color: #EADDCA;
+  box-shadow:  5px 15px black;
+}
+
+.title-bar {
+  height: 30px;
+  background-color: #6e9df2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-bottom: 2px solid #000;
+}
+
+.controls {
+  display: flex;
+  gap: 5px;
+  width: 80px;
+  height: 34px;
+  left: 1px;
+}
+
+.control {
+  width: 100px;
+  height: 10px;
+}
+
+.content {
+  flex: 1;
+  background-color: #ffebc5;
+  overflow: hidden;
+  position: relative;
+  overflow-x: scroll; /* Changed overflow-y to overflow-x */
+}
+
+.inner-content {
+  white-space: nowrap; /* Added to prevent wrapping */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Your existing CSS styles */
+
+.scroll-bar {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #000;
+  background-color: #fff;
+}
+
+
+.scroll-left, .scroll-right {
+  width: 30px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  border: 1px solid #000;
+  background-color: #6e9df2;
+}
+
+.scroll-track {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #000;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-thumb {
+  width: 50px;
+  height: 100%;
+  background-color: #6e9df2;
+  position: absolute;
+  cursor: pointer;
+}
 
